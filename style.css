@@ -57,6 +57,10 @@
     font-weight: 700;
 }
 
+.nav-items a:hover{
+    color: #1282A2;
+}
+
 .hero-section{
     background-image: url("hero_image.png");
     height: 600px;
@@ -70,20 +74,18 @@
 .hero-msg{
     border-radius: 8px;
     border: 1px solid transparent;
-    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 260px;
+    top: 265px;
     right: 90px;
 }
 
 .hero-msg button{
-    height: 40px;
     background-color: white;
     color: #1282A2;
-    font-size: 12px;
+    font-size: 1rem;
     padding: 10px 45px;
     border: 1px solid transparent;
     border-radius: 8px;
@@ -99,16 +101,22 @@
     color: #1282A2;
 }
 
-/* .container button{
-    background-color: #023047;
-    color: #fff;
-    font-size: 12px;
-    padding: 10px 45px;
-    border: 1px solid transparent;
-    border-radius: 8px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    margin-top: 10px;
-    cursor: pointer;
-} */
+#about, #contact {
+    padding: 2rem;
+    text-align: center;
+}
+
+#about h2, #contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#about p, #contact p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+#about a, #contact a {
+    color: #1282A2;
+    text-decoration: none;
+}
