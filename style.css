@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+
+.navbar{
+    height: 100px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+.nav-logo-name{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 250px;
+}
+
+.nav-logo{
+    height: 70px;
+    width: 100px;
+}
+
+.logo{
+    background-image: url("logo.png");
+    background-size: cover;
+    height: 70px;
+    width: 100px;
+}
+
+.name{
+    height: 70px;
+    width: 150px;
+    background-image: url("bunk-buddies.png");
+    background-size: cover;
+}
+
+.nav-options{
+    width: 70%;
+    font-size: 0.9rem;
+}
+
+.nav-options a{
+    text-decoration: none;
+    display: inline;
+    margin-right: 15px;
+}
+
+/* .container button{
+    background-color: #023047;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+} */
+
+.hero-section{
+    
+}
