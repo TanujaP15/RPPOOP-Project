@@ -5,7 +5,8 @@
 }
 
 .navbar{
-    height: 100px;
+    padding: 10px;
+    height: 80px;
     background-color: white;
     color: black;
     display: flex;
@@ -40,15 +41,62 @@
     background-size: cover;
 }
 
-.nav-options{
+.nav-items{
     width: 70%;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
 }
 
-.nav-options a{
+.nav-items a{
     text-decoration: none;
     display: inline;
     margin-right: 15px;
+    color: black;
+    font-weight: 700;
+}
+
+.hero-section{
+    background-image: url("hero_image.png");
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-msg{
+    border-radius: 8px;
+    border: 1px solid transparent;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 260px;
+    right: 90px;
+}
+
+.hero-msg button{
+    height: 40px;
+    background-color: white;
+    color: #1282A2;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.hero-msg a{
+    text-decoration: none;
+    color: #1282A2;
 }
 
 /* .container button{
@@ -64,7 +112,3 @@
     margin-top: 10px;
     cursor: pointer;
 } */
-
-.hero-section{
-    
-}
