@@ -53,12 +53,12 @@
     text-decoration: none;
     display: inline;
     margin-right: 15px;
-    color: black;
+    color:  #1282A2;
     font-weight: 700;
 }
 
 .nav-items a:hover{
-    color: #1282A2;
+    color:black;
 }
 
 .hero-section{
