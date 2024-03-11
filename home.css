@@ -102,6 +102,8 @@
     margin-top: 15px;
     width: 100%;
     z-index: 999;
+    padding: 20px;
+    display: none;
 }
 
 .search input {
@@ -133,5 +135,5 @@
 }
 
 .search-section.active .content {
-    
+    display: block;
 }
