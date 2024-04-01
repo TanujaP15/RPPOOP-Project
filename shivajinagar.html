@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHIVAJINAGAR MAP</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="shivajinagar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    
+    <div class="search-filter">
+        <div class="filter-item">
+            <label for="location">Locality</label>
+            <input type="text" id="location" placeholder="Search locality" />
+        </div>
+        <div class="filter-item">
+            <label for="budget">Budget</label>
+            <input type="text" id="budget" placeholder="Min budget" />
+        </div>
+        <div class="filter-item">
+            <label for="gender">Gender</label>
+            <select id="gender">
+                <option value="">Any</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+        <div class="filter-item">
+            <label for="preferred-by">Preferred By</label>
+            <select id="preferred-by">
+                <option value="">Any</option>
+                <option value="students">Students</option>
+                <option value="professionals">Professionals</option>
+            </select>
+        </div>
+        <div class="filter-item">
+            <button class="apply-filters">Apply Filters</button>
+        </div>
+    </div>
+
+        <div class="container">
+        <div class="map-container" id="map"></div>
+
+        <div class="property-container">
+            <div class="property-card" id="cosenza-house">
+                <div class="property-card-image" style="background-image: url('cosenza.webp');"></div>
+                <h2>Cosenza House</h2>
+                <!-- <p>Preferred by students, Luxor House offers a range of room options including single, double, and triple occupancy rooms. All rooms come with attached balcony and attached washroom.</p> -->
+
+                <p>Starting from <strong>₹ 14,199/mo</strong></p>
+                <button>SCHEDULE A VISIT</button>
+            </div>
+            <div class="property-card" id="sarasota-house">
+                <div class="property-card-image" style="background-image: url('sarasota_house.webp');"></div>
+                <h2>Sarasota House House</h2>
+                <p>Starting from <strong>₹ 14,199/mo</strong></p>
+                <button>SCHEDULE A VISIT</button>
+            </div>
+            <div class="property-card" id="boulder-house">
+                <div class="property-card-image" style="background-image: url('boulder_house.jpg');"></div>
+                <h2>Boulder House</h2>
+                <!-- <p>Preferred by students, Luxor House offers a range of room options including single, double, and triple occupancy rooms. All rooms come with attached balcony and attached washroom.</p> -->
+                <p>Starting from <strong>₹ 14,199/mo</strong></p>
+                <button>SCHEDULE A VISIT</button>
+            </div>
+            <div class="property-card" id="annaba-house">
+                <div class="property-card-image" style="background-image: url('annaba_house.webp');"></div>
+                <h2>Annaba House</h2>
+                <!-- <p>Preferred by students, Luxor House offers a range of room options including single, double, and triple occupancy rooms. All rooms come with attached balcony and attached washroom.</p> -->
+
+                <p>Starting from <strong>₹ 14,199/mo</strong></p>
+                <button>SCHEDULE A VISIT</button>
+            </div>
+            <div class="property-card" id="cosenza-house">
+                <div class="property-card-image" style="background-image: url('cosenza.webp');"></div>
+                <h2>Cosenza House</h2>
+                <!-- <p>Preferred by students, Luxor House offers a range of room options including single, double, and triple occupancy rooms. All rooms come with attached balcony and attached washroom.</p> -->
+
+                <p>Starting from <strong>₹ 14,199/mo</strong></p>
+                <button>SCHEDULE A VISIT</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('map').setView([18.5308, 73.8475], 16); // Set initial view
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+        }).addTo(map);
+
+        // Add markers for each property
+        var properties = [
+            {
+                name: 'Luxor House',
+                lat: 18.5204,
+                lng: 73.8567,
+                container: 'luxor-house'
+            },
+            {
+                name: 'Austin House',
+                lat: 18.4872,
+                lng: 73.9048,
+                container: 'austin-house'
+            },
+        ];
+
+        properties.forEach(function(property) {
+            var marker = L.marker([property.lat, property.lng]).addTo(map);
+            marker.on('click', function() {
+                var container = document.getElementById(property.container);
+                if (container) {
+                    container.scrollIntoView();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

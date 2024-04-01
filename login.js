@@ -9,3 +9,10 @@ registerBtn.addEventListener('click', () => {
 loginBtn.addEventListener('click', () => {
     container.classList.remove("active");
 });
+
+document.getElementById("login-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    var userName = event.target.name.value;
+    sessionStorage.setItem("userName", userName);
+    window.location.href = "home.html";
+});

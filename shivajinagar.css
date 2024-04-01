@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: space-evenly;
+}
+
+.map-container {
+    height: 100%;
+    width: 70%;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+
+.property-container {
+    height: 100%;
+    width: 30%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.property-card i {
+    color: black
+}
+
+.property-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.property-card-image {
+    width: 150px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+}
+
+.property-card h2 {
+    margin-top: 0;
+}
+
+.property-card button {
+    background-color: white;
+    color: #1282A2;
+    border: transparent;
+    border-radius: 4px;
+    padding: 10px;
+    align-self: center;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.property-card button:hover {
+    background-color: #45a049;
+}
+
+.search-filter {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+margin-bottom: 20px;
+}
+
+.filter-item {
+flex-basis: calc(25% - 10px);
+margin-bottom: 10px;
+}
+
+.filter-item label {
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
+}
+
+.filter-item input,
+.filter-item select {
+width: 100%;
+padding: 5px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+.apply-filters {
+background-color: #1282A2;
+color: white;
+border: none;
+border-radius: 4px;
+padding: 5px 10px;
+cursor: pointer;
+}
+
+.apply-filters:hover {
+background-color: #0a6584;
+}
