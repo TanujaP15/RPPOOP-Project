@@ -1,50 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="login.css">
-    <title>Login Page</title>
-</head>
-<body>
-    <div class="container" id="container">
-        <div class="form-container sign-in">
-            <form>
-                <h1>Create Account</h1>
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Password" required>
-                <button>Sign In</button>
-            </form>
-        </div>
+  <head>
+    <title>Login 2</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="login">
+      <img src="profile.png" />
+      <h3>Welcome back</h3>
+      <h2>Jay Bennett</h2>
 
-        <div class="form-container log-in">
-            <form>
-                <h1>Log In</h1>
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Password" required>
-                <button>Log In</button>
-            </form>
-        </div>
-        <div class="toggle-container">
-            <div class="toggle">
-                <div class="toggle-panel toggle-left">
-                    <h1>Welcome, Back!</h1>
-                    <p>Your journey continues here</p>
-                    <button class="hidden" id="login">Log In</button>
-                </div>
-                <div class="toggle-panel toggle-right">
-                    <h1>Welcome!</h1>
-                    <p>Enter your personal details to use all of site features</p>
-                    <button class="hidden" id="register">Sign In</button>
-                </div>
-            </div>
-        </div>
+      <form class="login-form">
+        <input type="password" placeholder="Enter your passcode" />
+        <button type="submit">LOGIN</button>
+        <a href="https://website.com">Forgot your passcode?</a>
+      </form>
     </div>
-
-    <script src="login.js"></script>
-</body>
-
+  </body>
 </html>
-
