@@ -28,7 +28,7 @@
 }
 
 .logo{
-    background-image: url("logo.png");
+    background-image: url("Images/logo.png");
     background-size: cover;
     height: 70px;
     width: 100px;
@@ -37,7 +37,7 @@
 .name{
     height: 70px;
     width: 150px;
-    background-image: url("bunk-buddies.png");
+    background-image: url("Images/bunk-buddies.png");
     background-size: cover;
 }
 
@@ -62,7 +62,7 @@
 }
 
 .hero-section{
-    background-image: url("hero_image.png");
+    background-image: url("Images/hero_image.png");
     height: 600px;
     background-size: cover;
     display: flex;
