@@ -1,20 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Login 2</title>
-    <link rel="stylesheet" href="login.css" />
-  </head>
-  <body>
-    <div class="login">
-      <img src="profile.png" />
-      <h3>Welcome back</h3>
-      <h2>Jay Bennett</h2>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form</title>
+  <link href="https://fonts.googleapis.com/css?family=Assistant:400,700" rel="stylesheet"><link rel="stylesheet" href="login.css">
 
-      <form class="login-form">
-        <input type="password" placeholder="Enter your passcode" />
-        <button type="submit">LOGIN</button>
-        <a href="https://website.com">Forgot your passcode?</a>
-      </form>
-    </div>
-  </body>
+</head>
+<body>
+  <section class='login' id='login'>
+  <div class='head'>
+    <h1 class='company'>Bunk Buddies</h1>
+  </div>
+  <p class='msg'>Welcome back</p>
+  <div class='form'>
+    <form>
+  <input type="text" placeholder='Username' class='text' id='username' required><br>
+  <input type="password" placeholder='••••••••••••••' class='password'><br>
+  <a href="#" class='btn-login' id='do-login'>Login</a>
+  <a href="#" class='forgot'>Forgot?</a>
+    </form>
+  </div>
+</section>
+  <script  src="login.js"></script>
+
+</body>
 </html>
