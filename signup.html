@@ -2,26 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up Form</title>
-  <link href="https://fonts.googleapis.com/css?family=Assistant:400,700" rel="stylesheet">
   <link rel="stylesheet" href="signup.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-  <section class='signup' id='signup'>
-    <div class='head'>
-      <h1 class='company'>Bunk Buddies</h1>
+  <div class="wrapper">
+    <h1>Sign Up</h1>
+    <form action="">
+      <input type="text" placeholder="Username">
+      <input type="text" placeholder="Name">
+      <input type="password" placeholder="Password">
+      <input type="password" placeholder="Re-Enter Password">
+    </form>
+    <button>Sign Up</button>
+    <div class="member">
+      Already a member?<a href="login.html">Login Here</a>
     </div>
-    <p class='msg'>Create your account</p>
-    <div class='form'>
-      <form>
-        <input type="text" placeholder='Username' class='text' id='username' required><br>
-        <input type="email" placeholder='Email' class='email' id='email' required><br>
-        <input type="password" placeholder='••••••••••••••' class='password'><br>
-        <input type="password" placeholder='Confirm Password' class='confirm-password'><br>
-        <button class='btn-signup'>Sign Up</button>
-        <a href="login.html" class='login'>Already have an account? Login</a>
-      </form>
-    </div>
-  </section>
+  </div>
 </body>
 </html>

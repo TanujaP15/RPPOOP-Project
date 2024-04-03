@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="home.css">
     <title>Home</title>
 </head>
 <body>
@@ -21,14 +21,33 @@
         </nav> 
     </header>
 
-    <section class="home" id="home">
+    <!-- <section class="home" id="home">
         <div class="content">
             <h3>Your Home Away</h3>
             <span>Upgrade your living experience with Bunk Buddies</span>
             <p>Wherever you go, Bunk Buddies helps you find your home away from home. Discover and book hostels that match your style effortlessly.</p>
             <a href="#" class="btn">Explore More</a>
         </div>
+    </section> -->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Your Home Away</h3>
+            <span>Upgrade your living experience with Bunk Buddies</span>
+            <p>Wherever you go, Bunk Buddies helps you find your home away from home. Discover and book hostels that match your style effortlessly.</p>
+            <div class="search">
+                <select id="location">
+                    <option value="" selected disabled>Select a location</option>
+                    <option value="shivajinagar">Shivajinagar</option>
+                    <option value="wakad">Wakad</option>
+                    <option value="karvenagar">Karvenagar</option>
+                    <option value="katraj">Katraj</option>
+                </select>
+                <button class="btn-search">Search</button>
+            </div>
+        </div>
     </section>
+    
 
     <section class="about" id="about">
         <h1 class="heading"><span> about </span> us </h1>
