@@ -9,47 +9,102 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
+<div class="search-container">
+    <div class="search-location-container">
+        <div class="search-location">
+            <div class="search-icon">
+                <i class="fas fa-search"></i>
+            </div>
+            <select id="location-dropdown">
+                <option value="shivajinagar">Shivajinagar</option>
+                <option value="wakad">Wakad</option>
+                <option value="aundh">Aundh</option>
+                <option value="karvenagar">Karve Nagar</option>
+                <option value="katraj">Katraj</option>
+            </select>
+        </div>
+    </div>
+</div>
+    
+    
     
     <div class="search-filter">
         <div class="filter-item">
-            <label for="location">Locality</label>
-            <input type="text" id="location" placeholder="Search locality" />
+            <label for="budget-range">Budget Range</label>
+            <select id="budget-range">
+                <option value="">Any</option>
+                <option value="0-5000">Up to ₹5000</option>
+                <option value="5001-10000">₹5001 - ₹10000</option>
+                <option value="10001-15000">₹10001 - ₹15000</option>
+                <option value="15001-20000">₹15001 - ₹20000</option>
+                <option value="20001-25000">₹20001 - ₹25000</option>
+
+            </select>
         </div>
         <div class="filter-item">
-            <label for="budget-filter">Budget:</label>
-            <input type="range" id="budget-filter" name="budget-filter" min="3499" max="38999" step="1000" />
-            <span id="budget-filter-value"></span>
+            <label for="accommodation-type">Amenities</label>
+            <select id="accommodation-type">
+                <option value="">Any</option>
+                <option value="wi-fi">Wi-fi</option>
+                <option value="laundry">Laundry</option>
+                <option value="hotwater">Hot Water</option>
+                <option value="mess">Mess</option>
+            </select>
+        </div>
+        <div class="filter-item">
+            <label for="ratings">Ratings</label>
+            <select id="ratings">
+                <option value="">Any</option>
+                <option value="5">5 stars</option>
+                <option value="4">4 stars & above</option>
+                <option value="3">3 stars & above</option>
+                <option value="2">2 stars & above</option>
+                <option value="1">1 star & above</option>
+            </select>
         </div>
         <div class="filter-item">
             <label for="gender">Gender</label>
             <select id="gender">
                 <option value="">Any</option>
+                <option value="unisex">Unisex</option>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
             </select>
         </div>
-        <div class="filter-item">
-            <label for="preferred-by">Preferred By</label>
-            <select id="preferred-by">
-                <option value="">Any</option>
-                <option value="students">Students</option>
-                <option value="professionals">Professionals</option>
-            </select>
-        </div>
-        <div class="filter-item">
-            <button class="apply-filters">Apply Filters</button>
-        </div>
+
+
     </div>
         <div class="container">
         <div class="map-container" id="map"></div>
 
         <div class="property-container">
-            <div class="property-card" id="cosenza-house">
+            <div class="property-card">
                 <div class="property-card-image" style="background-image: url('/Images/cosenza.webp');"></div>
-                <h2>Cosenza House</h2>
-                <p>Starting from <strong>₹ 14,199/mo</strong></p>
-                <button>SCHEDULE A VISIT</button>
+                <div class="property-card-content">
+                    <h2>Property Name</h2>
+                    <div class="property-details">
+                        <div class="property-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="property-gender">
+                            <i class="fas fa-venus-mars"></i> Gender: Male
+                        </div>
+                        <div class="property-occupancy">
+                            <i class="fas fa-users"></i> Occupancy: 2
+                        </div>
+                        <div class="property-budget">
+                            <i class="fas fa-money-bill-wave"></i> Budget: ₹15,000/mo
+                        </div>
+                    </div>
+                    <button>SCHEDULE A VISIT</button>
+                </div>
             </div>
+            
+
             <div class="property-card" id="sarasota-house">
                 <div class="property-card-image" style="background-image: url('/Images/sarasota_house.webp');"></div>
                 <h2>Sarasota House House</h2>
@@ -110,21 +165,6 @@
                 }
             });
         });
-
-        var budgetFilter = document.getElementById("budget-filter");
-        var budgetFilterVAlue = document.getElementById("budget-filter-value");
-        
-        function updateBudgetValue() {
-            var value = budgetFilter.value;
-            budgetFilterVAlue.textContent = "Rs. " + value;
-            var hue = (value - budgetFilter.min) / (budgetFilter.max - budgetFilter.min) * 120;
-            budgetFilterVAlue.style.color = "hsl(" + hue + ", 100%, 50% )";
-
-        }
-
-        updateBudgetValue();
-        budgetFilter.addEventListener("input", updateBudgetValue);
-
     </script>
 </body>
 </html>

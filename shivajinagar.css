@@ -17,7 +17,7 @@ body {
 }
 
 .map-container {
-    width: 45%;
+    width: 50%;
     height: 80vh;
     margin-right: 20px;
     border-radius: 8px;
@@ -87,10 +87,11 @@ body {
     flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 20px;
+    justify-content: space-evenly;
 }
 
 .filter-item {
-    flex-basis: calc(25% - 10px);
+    flex-basis: calc(20% - 10px);
     margin-bottom: 10px;
 }
 
@@ -98,7 +99,7 @@ body {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    color: #333;
+    color: #1282A2;
 }
 
 .filter-item input,
@@ -109,26 +110,96 @@ body {
     border-radius: 4px;
 }
 
-.apply-filters {
+
+.search-location-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+
+}
+
+.search-location {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* padding: 5px; */
+    width: 60%; /* adjust width as needed */
+}
+
+.search-icon {
+    margin-right: 5px;
+    margin-left: 5px;
+    color: #1282A2;
+}
+
+#location-dropdown {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.property-card {
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    width: 300px; /* Adjust width as needed */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.property-card-image {
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.property-card-content {
+    padding: 20px;
+}
+
+.property-card h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.property-details {
+    margin-bottom: 10px;
+}
+
+.property-details > div {
+    margin-bottom: 5px;
+}
+
+
+.property-details i {
+    margin-right: 5px;
+}
+
+button {
     background-color: #1282A2;
     color: white;
     border: none;
     border-radius: 4px;
-    padding: 8px 16px;
+    padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
 }
 
-.apply-filters:hover {
+button:hover {
     background-color: #0a6584;
 }
 
-#budget-filter {
-    width: 100%;
-    margin-left: 10px;
-}
-
-#budget-filter-value {
-    margin-left: 10px;
+.property-details .property-rating i {
+    color: #FFD700;
 }
